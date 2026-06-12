@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://n0h60x7a3824"]
+
+[ext_resource type="Texture2D" uid="uid://cy3usw31fsgha" path="res://kenney_space-shooter-remastered/Backgrounds/darkPurple.png" id="1_itxqv"]
+
+[node name="Main" type="Node2D" unique_id=79361867]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=87625401]
+offset_left = -54.0
+offset_top = -67.0
+offset_right = 1180.0
+offset_bottom = 675.0
+texture = ExtResource("1_itxqv")
+stretch_mode = 1
