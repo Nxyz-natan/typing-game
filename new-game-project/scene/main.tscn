@@ -1,13 +1,85 @@
 [gd_scene format=3 uid="uid://n0h60x7a3824"]
 
-[ext_resource type="Texture2D" uid="uid://cy3usw31fsgha" path="res://kenney_space-shooter-remastered/Backgrounds/darkPurple.png" id="1_itxqv"]
+[node name="Main" type="CanvasLayer" unique_id=1414640577]
 
-[node name="Main" type="Node2D" unique_id=79361867]
+[node name="Content" type="Control" parent="." unique_id=1076668579]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=87625401]
-offset_left = -54.0
-offset_top = -67.0
-offset_right = 1180.0
-offset_bottom = 675.0
-texture = ExtResource("1_itxqv")
-stretch_mode = 1
+[node name="Questioninfo" type="VBoxContainer" parent="Content" unique_id=845266096]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.001953125
+anchor_right = 1.0019531
+anchor_bottom = 0.5
+offset_left = 22.5
+offset_right = -22.5
+offset_bottom = 113.0
+grow_horizontal = 2
+
+[node name="Questiontext" type="Label" parent="Content/Questioninfo" unique_id=1662016480]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 50
+text = "Question"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Imageholder" type="Panel" parent="Content/Questioninfo" unique_id=853890523]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+
+[node name="questionimage" type="TextureRect" parent="Content/Questioninfo/Imageholder" unique_id=1743394627]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="questionvideo" type="VideoStreamPlayer" parent="Content/Questioninfo/Imageholder" unique_id=602981910]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand = true
+
+[node name="questionaudio" type="AudioStreamPlayer" parent="Content/Questioninfo/Imageholder" unique_id=912701374]
+
+[node name="Questionholder" type="VBoxContainer" parent="Content" unique_id=280777603]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01484375
+anchor_top = 0.675
+anchor_right = 0.98515624
+anchor_bottom = 0.9861111
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Buttonoption" type="Button" parent="Content/Questionholder" unique_id=1117967674]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Buttonoption2" type="Button" parent="Content/Questionholder" unique_id=1969865371]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Buttonoption3" type="Button" parent="Content/Questionholder" unique_id=1867403281]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Buttonoption4" type="Button" parent="Content/Questionholder" unique_id=940015263]
+layout_mode = 2
+size_flags_vertical = 3
