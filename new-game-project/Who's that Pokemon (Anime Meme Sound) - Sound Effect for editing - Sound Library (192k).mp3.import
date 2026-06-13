@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d11gsem6wpd6"
+path="res://.godot/imported/Who's that Pokemon (Anime Meme Sound) - Sound Effect for editing - Sound Library (192k).mp3-056c95af5dc43c312f266e4c11f2643a.mp3str"
+
+[deps]
+
+source_file="res://Who's that Pokemon (Anime Meme Sound) - Sound Effect for editing - Sound Library (192k).mp3"
+dest_files=["res://.godot/imported/Who's that Pokemon (Anime Meme Sound) - Sound Effect for editing - Sound Library (192k).mp3-056c95af5dc43c312f266e4c11f2643a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

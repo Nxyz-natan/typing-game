@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://n0h60x7a3824"]
 
+[ext_resource type="Script" uid="uid://chapcsbvndfsn" path="res://script/main.gd" id="1_brvut"]
+[ext_resource type="AudioStream" uid="uid://d11gsem6wpd6" path="res://Who's that Pokemon (Anime Meme Sound) - Sound Effect for editing - Sound Library (192k).mp3" id="2_v0l8b"]
+
+[sub_resource type="GDScript" id="GDScript_v0l8b"]
+script/source = "extends CanvasLayer"
+
 [node name="Main" type="CanvasLayer" unique_id=1414640577]
+script = ExtResource("1_brvut")
 
 [node name="Content" type="Control" parent="." unique_id=1076668579]
 layout_mode = 3
@@ -29,6 +36,7 @@ theme_override_font_sizes/font_size = 50
 text = "Question"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Imageholder" type="Panel" parent="Content/Questioninfo" unique_id=853890523]
 custom_minimum_size = Vector2(0, 400)
@@ -53,8 +61,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 expand = true
-
-[node name="questionaudio" type="AudioStreamPlayer" parent="Content/Questioninfo/Imageholder" unique_id=912701374]
 
 [node name="Questionholder" type="VBoxContainer" parent="Content" unique_id=280777603]
 layout_mode = 1
@@ -83,3 +89,7 @@ size_flags_vertical = 3
 [node name="Buttonoption4" type="Button" parent="Content/Questionholder" unique_id=940015263]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="audio_player" type="AudioStreamPlayer" parent="." unique_id=912701374]
+stream = ExtResource("2_v0l8b")
+script = SubResource("GDScript_v0l8b")

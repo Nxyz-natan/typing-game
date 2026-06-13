@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://ciovvni07xrjq"]
+
+[ext_resource type="Script" uid="uid://cjdwiulx2i7a2" path="res://script/resources/question.gd" id="1_57wlc"]
+
+[resource]
+script = ExtResource("1_57wlc")
+question_info = "who is your best friend?"
+metadata/_custom_type_script = "uid://cjdwiulx2i7a2"
